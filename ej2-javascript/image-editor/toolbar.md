@@ -126,7 +126,7 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
 {% endif %}
 
-## Show or Hide a toolbar 
+## Show or Hide a toolbar
 
 The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibility of the toolbar in the Image Editor. When the Toolbar property is set to an empty list, the toolbar is hidden. Conversely, if the Toolbar property contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
 

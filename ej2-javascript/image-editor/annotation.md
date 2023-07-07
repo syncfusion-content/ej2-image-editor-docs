@@ -128,7 +128,7 @@ In the following example, the [`deleteShape`](../../api/image-editor/#deleteshap
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
 {% endif %}
 
-### Shape Changing
+### Customize font family and text color
 
 The [`ShapeChanging`](../../api/image-editor/#shapechangeeventargs) event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
