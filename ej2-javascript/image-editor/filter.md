@@ -45,3 +45,13 @@ In the following example, you can using the applyImageFilter method in the butto
 
 {% previewsample "page.domainurl/code-snippet/image-editor/filter-cs1" %}
 {% endif %}
+
+## Apply filter effect
+
+The [`imageFiltering`](../../api/image-editor/#imageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
+
+The parameter available in the [`ImageFilterEventArgs`](../../api/image-editor/#ImageFilterEventArgs) event is, 
+
+ImageFilterEventArgs.filter - The type of filtering as [`ImageFilterOption`](../../api/image-editor/#ImageFilterOption) to be applied in the image editor. 
+
+ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 

@@ -11,27 +11,15 @@ domainurl: ##DomainURL##
 
 # Toolbar in ##Platform_Name## Image editor control
 
-Toolbars are used to interact and edit images with customization. Users can define their own toolbars for an image editor by customizing the items or the entire toolbar.
+The toolbars in the Image Editor are a key component for interacting with and editing images. They provide a range of tools and options that can be customized to suit the needs and preferences. Add or remove items from the toolbar to create a personalized set of tools, or they can even create their own custom toolbar from scratch. This flexibility and customization allow them to create a unique image editing experience that is tailored to their specific needs and workflow.
 
-## Built-in Toolbar Items
+In the Image Editor, the [`toolbar`](../../api/image-editor/#toolbar) property provides the ability to customize the toolbar by adding or removing items, as well as defining a completely custom toolbar. This feature is valuable for creating a personalized image editing experience that aligns with specific requirements and workflows. 
 
-Specifies the toolbar items to perform UI interactions. Refer to the built-in toolbar items for the default value.
+## Add a custom toolbar item
 
-* Crop,
-* Transform,
-* Annotate,
-* ZoomIn,
-* ZoomOut,
-* Open,
-* Reset,
-* Save,
-* Pan
+The [`toolbar`](../../api/image-editor/#toolbar) property in the Image Editor allows to add or remove toolbar items to include only the tools they frequently use, streamlining the editing process and reducing clutter.
 
-## Custom Toolbar items
-
-Users can define their own toolbars for an image editor by customizing the items or the entire toolbar. Users can achieve this by using the [`toolbar`](../../api/image-editor/#toolbar) property.
-
-The built-in toolbar can be customized using the [`toolbar`](../../api/image-editor/#toolbar) property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can also be customized in the toolbarUpdating event.
+Here is an example of adding custom toolbar items to rotate and flip transformation using [`toolbar`](../../api/image-editor/#toolbar) property. 
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -58,72 +46,6 @@ The built-in toolbar can be customized using the [`toolbar`](../../api/image-edi
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-cs1" %}
-{% endif %}
-
-## Toolbar template
-
-Specifies template to the Image Editor Toolbar. If you want to customize the entire toolbar in your own way use this property. The property depends on the ‘toolbar’.
-
-The toolbar of the Image Editor can be replaced with the user specific UI using the [`toolbarTemplate`](../../api/image-editor/#toolbartemplate) property.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/toolbar-template-cs1/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/toolbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs1" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/toolbar-template-cs1/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/toolbar-template-cs1/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs1" %}
-{% endif %}
-
-## Customize Contextual Toolbar
-
-The built-in contextual toolbar can be customized using the toolbar property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can  be customized in the [`toolbarUpdating`](../../api/image-editor/#toolbarupdating) event
-
-In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
-
-{% if page.publishingplatform == "typescript" %}
-
- {% tabs %}
-{% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/toolbar-template-cs2/index.ts %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/toolbar-template-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-        
-{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
-
-{% elsif page.publishingplatform == "javascript" %}
-
-{% tabs %}
-{% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/toolbar-template-cs2/index.js %}
-{% endhighlight %}
-{% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/toolbar-template-cs2/index.html %}
-{% endhighlight %}
-{% endtabs %}
-
-{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
 {% endif %}
 
 ## Show or Hide a toolbar
@@ -186,4 +108,105 @@ Here is an example of hiding the cropping and selection toolbar items using [`to
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs4" %}
+{% endif %}
+
+## Customize Contextual Toolbar
+
+The built-in contextual toolbar can be customized using the toolbar property, so the specified toolbar items can be enabled in the Image Editor toolbar. And the contextual toolbar which is enabled while inserting annotations can  be customized in the [`toolbarUpdating`](../../api/image-editor/#toolbarupdating) event
+
+In the following example, the contextual toolbar for rectangle will be rendered with only stroke color by excluding fill color and stroke width using toolbarUpdating event.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs2/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs2/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs2/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
+{% endif %}
+
+## Toolbar created event
+
+The [`toolbarCreated`](../../api/image-editor/#toolbarCreated) event is triggered after the toolbar is created in the Image Editor. This event can be useful when you need to perform any actions or make modifications to the toolbar once it is fully initialized and ready for interaction. By subscribing to the [`toolbarCreated`](../../api/image-editor/#toolbarCreated) event, you can access the toolbar object and perform tasks such as adding event handlers, customizing the appearance, or configuring additional functionality.
+
+## Toolbar item clicked event
+
+The [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
+
+Here is an example of toolbar item clicking event using [`toolbarItemClicked`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbarItemClicked) property. 
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs5" %}
+{% endif %}
+
+## Toolbar template
+
+The [`toolbarTemplate`](../../api/image-editor/#toolbartemplate) property in the Image Editor provides the capability to fully customize the toolbar by supplying a custom template. This feature is valuable when you want to create a distinct and personalized image editing experience that goes beyond the default toolbar or the customizable toolbar options offered by the Image Editor. By defining a custom template for the toolbar, you have complete control over its layout, appearance, and functionality. This empowers you to design a unique and tailored toolbar that aligns perfectly with your specific requirements and desired user experience. 
+
+Here is an example of using [`toolbarTemplate`](../../api/image-editor/#toolbartemplate) to render only the button to toggle the freehand draw option. 
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs1/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs1" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs1/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs1/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs1" %}
 {% endif %}
