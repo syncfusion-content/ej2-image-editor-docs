@@ -125,3 +125,65 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 {% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs2" %}
 {% endif %}
+
+## Show or Hide a toolbar 
+
+The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibility of the toolbar in the Image Editor. When the Toolbar property is set to an empty list, the toolbar is hidden. Conversely, if the Toolbar property contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
+
+Here is an example of hiding the toolbar of the image editor using Toolbar property. 
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs3/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs3" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs3/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs3/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs3" %}
+{% endif %}
+
+## Show or Hide a toolbar Item
+
+The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the Toolbar property includes the default toolbar items. If you wish to hide the default toolbar items and specify your own set of required items, you need to explicitly define those items in the Toolbar property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences. 
+
+Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbar) property. 
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/toolbar-template-cs4/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs4" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/toolbar-template-cs4/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/toolbar-template-cs4/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/toolbar-template-cs4" %}
+{% endif %}

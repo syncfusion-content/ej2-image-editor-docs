@@ -66,6 +66,99 @@ In the following example, you can using the drawText method in the button click 
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs1" %}
 {% endif %}
 
+### Multiline Text
+
+The [`drawText`](../../api/image-editor/#drawtext) method in the Image Editor component is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation.
+
+In the following example, you can using the drawText method in the button click event.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs8/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs8/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs8/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs8" %}
+{% endif %}
+
+### Delete Text
+
+The [`deleteShape`](../../api/image-editor/#deleteshape) method allows you to remove a text annotation from the image editor.To use this method, you need to pass the shapeId of the annotation as a parameter. 
+
+In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs9/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs9/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
+{% endif %}
+
+### Shape Changing
+
+The [`ShapeChanging`](../../api/image-editor/#shapechangeeventargs) event in the Image Editor component is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
+
+By leveraging the [`ShapeChanging`](../../api/image-editor/#shapechangeeventargs) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor component. 
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs10/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs10/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs10" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs9/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs9/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs9" %}
+{% endif %}
+
 ## Freehand Draw
 
 This annotation can be customized by changing the pen color and stroke width and it can be made by either using a toolbar or the [`freeHandDraw`](../../api/image-editor/#freehanddraw) method.
@@ -101,6 +194,72 @@ In the following example, the [`freeHandDraw`](../../api/image-editor/#freehandd
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs2" %}
+{% endif %}
+
+### Delete Freehand drawing 
+
+The [`deleteShape`](../../api/image-editor/#deleteshape) method allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter.
+
+The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor. 
+
+In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs11/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs11/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs11/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
+{% endif %}
+
+### Adjust the stroke width and color 
+
+The [`ShapeChanging`](../../api/image-editor/#shapechangeeventargs) event in the Image Editor component is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation’s color and stroke width by adjusting the relevant properties.  
+
+By leveraging the [`ShapeChanging`](../../api/image-editor/#shapechangeeventargs) event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor component.  
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs12/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs12/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs12/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs12" %}
 {% endif %}
 
 ## Shapes
@@ -256,4 +415,90 @@ In the following example, the [`drawLine`](../../api/image-editor/#drawline) met
 {% endtabs %}
 
 {% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% endif %}
+
+## Arrow
+
+The arrow shape can be inserted and customized by changing its border color, and border width. The Arrow shape can be made by either using a toolbar or the ['drawArrow'](../../api/image-editor/#drawarrow) method.
+
+In the following example, the [`drawArrow`](../../api/image-editor/#drawarrow) method has the following parameters.
+
+     *  startX – Specifies start point x-coordinate of line.
+
+     *  startY – Specifies start point y-coordinate of line.
+
+     *  endX - Specifies endpoint x-coordinates of line.
+
+     *  endY - Specifies end point y-coordinates of the line.
+
+     *  strokeWidth - Specifies the stroke width of the line.
+
+     *  strokeColor - Specifies the stroke color of the line.
+
+In the toolbar,the arrow shape can be inserted by clicking the Annotation dropdown button and picking the Arrow option from that popup. Once that arrow shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs6/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs6/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs6/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs6" %}
+{% endif %}
+
+## Path
+
+The path shape can be inserted and customized by changing its border color, and border width. The Path shape can be made by either using a toolbar or the ['drawPath'](../../api/image-editor/#drawpath) method.
+
+In the [`drawPath`](https://ej2.syncfusion.com/angular/documentation/api/image-editor/#drawpath) method, the path shape can be inserted by specifying, stroke color and stroke width. The ['drawPath'](../../api/image-editor/#drawpath) method has the following parameters.
+
+     *  pointColl - specifies collection of start and end x, y-coordinates of path.
+
+     *  strokeWidth - Specifies the stroke width of the line.
+
+     *  strokeColor - Specifies the stroke color of the line.  
+
+In the toolbar,the path can be inserted by clicking the Annotation dropdown button and picking the Path option from that popup. Once that path shape is inserted, the contextual toolbar will be enabled for customizing its stroke color, and stroke width.
+
+In the following example, the [`drawPath`](../../api/image-editor/#drawpath) method has the following parameters.
+
+{% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs7/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs7/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs7/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs7" %}
 {% endif %}
