@@ -140,7 +140,7 @@ In the following example, the [`created`](../../api/image-editor/#created) event
 {% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
 {% endif %}
 
-### Created event
+### Destroyed event
 
 The [`destroyed`](../../api/image-editor/#destroyed) event is triggered once the Image Editor component is destroyed or removed from the application. This event serves as a notification that the component and its associated resources have been successfully cleaned up and are no longer active.
 
