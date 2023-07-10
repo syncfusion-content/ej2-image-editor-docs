@@ -237,7 +237,7 @@ By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event
 
 The [`deleteShape`](../../api/image-editor/#deleteshape) method allows you to remove a freehand annotation from the image editor. To use this method, you need to pass the shapeId of the annotation as a parameter.
 
-The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
+The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each freehand annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](../../api/image-editor/#shapeid) associated with the freehand annotation you want to remove, you can effectively delete it from the image editor.
 
 In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
 

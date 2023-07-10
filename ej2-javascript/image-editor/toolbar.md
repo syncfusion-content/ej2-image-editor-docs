@@ -81,9 +81,9 @@ Here is an example of hiding the toolbar of the image editor using Toolbar prope
 
 ## Show or Hide a toolbar Item
 
-The [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the Toolbar property includes the default toolbar items. If you wish to hide the default toolbar items and specify your own set of required items, you need to explicitly define those items in the Toolbar property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences. 
+The [`toolbar`](../../api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the Toolbar property includes the default toolbar items. If you wish to hide the default toolbar items and specify your own set of required items, you need to explicitly define those items in the Toolbar property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences. 
 
-Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbar) property. 
+Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](../../api/image-editor/#toolbar) property. 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -151,7 +151,7 @@ The [`toolbarCreated`](../../api/image-editor/#toolbarCreated) event is triggere
 
 The [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
 
-Here is an example of toolbar item clicking event using [`toolbarItemClicked`](https://ej2.syncfusion.com/vue/documentation/api/image-editor/#toolbarItemClicked) property. 
+Here is an example of toolbar item clicking event using [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) property. 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
