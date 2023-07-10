@@ -14,23 +14,23 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   });
   imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('btn1Click').onclick = function() {
+document.getElementById('rectangleClick').onclick = function() {
     let dimension = imageEditorObj.getImageDimension();
     imageEditorObj.drawRectangle(dimension.x, dimension.y);
 }
-document.getElementById('btn2Click').onclick = function() {
+document.getElementById('ellipseClick').onclick = function() {
     let dimension = imageEditorObj.getImageDimension();
     imageEditorObj.drawEllipse(dimension.x, dimension.y);
 }
-document.getElementById('btn3Click').onclick = function() {
+document.getElementById('lineClick').onclick = function() {
     let dimension = imageEditorObj.getImageDimension();
     imageEditorObj.drawLine(dimension.x, dimension.y);
 }
-document.getElementById('btn4Click').onclick = function() {
+document.getElementById('arrowClick').onclick = function() {
     let dimension = imageEditorObj.getImageDimension();
     imageEditorObj.drawArrow(dimension.x, dimension.y+10, dimension.x+50, dimension.y+10, 10);
 }
-document.getElementById('btn5Click').onclick = function() {
+document.getElementById('pathClick').onclick = function() {
     let dimension = imageEditorObj.getImageDimension();
     imageEditorObj.drawPath([{x: dimension.x, y: dimension.y}, {x: dimension.x+50, y: dimension.y+50}, {x: dimension.x+20, y: dimension.y+50}], 8);
 }
