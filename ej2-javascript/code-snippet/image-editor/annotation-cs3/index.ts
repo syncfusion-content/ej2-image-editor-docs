@@ -22,9 +22,25 @@ import { Browser } from '@syncfusion/ej2-base';
 
      //Button click
     let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
-    document.getElementById('btnClick').onclick = (): void => {
+    document.getElementById('btn1Click').onclick = (): void => {
         let dimension: any = imageEditorObj.getImageDimension();
         imageEditorObj.drawRectangle(dimension.x, dimension.y);
+    }
+    document.getElementById('btn2Click').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawEllipse(dimension.x, dimension.y);
+    }
+    document.getElementById('btn3Click').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawLine(dimension.x, dimension.y);
+    }
+    document.getElementById('btn4Click').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawArrow(dimension.x, dimension.y+10, dimension.x+50, dimension.y+10, 10);
+    }
+    document.getElementById('btn5Click').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawPath([{x: dimension.x, y: dimension.y}, {x: dimension.x+50, y: dimension.y+50}, {x: dimension.x+20, y: dimension.y+50}], 8);
     }
 
 
