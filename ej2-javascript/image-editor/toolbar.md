@@ -149,9 +149,9 @@ The [`toolbarCreated`](../../api/image-editor/#toolbarCreated) event is triggere
 
 ## Toolbar item clicked event
 
-The [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
+The [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) event is triggered when a toolbar item is clicked in the Image Editor. This event is particularly useful when you have added custom options to both the main toolbar and contextual toolbar, as it allows you to capture the user's interaction with those custom options. By subscribing to the [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) event, you can execute specific actions or handle logic based on the toolbar item that was clicked.
 
-Here is an example of toolbar item clicking event using [`toolbarItemClicked`](../../api/image-editor/#toolbarItemClicked) property. 
+Here is an example of toolbar item clicking event using [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) property. 
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
