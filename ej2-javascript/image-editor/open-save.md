@@ -117,27 +117,27 @@ In the following example, the [`created`](../../api/image-editor/#created) event
 
  {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
-{% include code-snippet/image-editor/custom-selection-cs1/index.ts %}
+{% include code-snippet/image-editor/getting-started-cs2/index.ts %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
+{% include code-snippet/image-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
         
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs2" %}
 
 {% elsif page.publishingplatform == "javascript" %}
 
 {% tabs %}
 {% highlight js tabtitle="index.js" %}
-{% include code-snippet/image-editor/custom-selection-cs1/index.js %}
+{% include code-snippet/image-editor/getting-started-cs2/index.js %}
 {% endhighlight %}
 {% highlight html tabtitle="index.html" %}
-{% include code-snippet/image-editor/custom-selection-cs1/index.html %}
+{% include code-snippet/image-editor/getting-started-cs2/index.html %}
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/custom-selection-cs1" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/getting-started-cs2" %}
 {% endif %}
 
 ### Destroyed event
