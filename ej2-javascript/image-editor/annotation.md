@@ -386,7 +386,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 {% endhighlight %}
 {% endtabs %}
 
-{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs11" %}
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs3" %}
 {% endif %}
 
 ## Delete a shape
@@ -396,3 +396,32 @@ The [`deleteShape`](../../api/image-editor/#deleteShape) method in the Image Edi
 The [`shapeId`](../../api/image-editor/#shapeid) is a unique identifier assigned to each shape annotation within the image editor. It serves as a reference to a specific annotation, enabling targeted deletion of the desired annotation. By specifying the [`shapeId`](../../api/image-editor/#shapeid) associated with the shape annotation you want to remove, you can effectively delete it from the image editor.
 
 To retrieve the inserted shape annotations, you can utilize the [`getShapeSetting`](../../api/image-editor/#getshapesetting) method, which provides a collection of annotations represented by [`ShapeSettings`](../../api/image-editor/shapeSettings/). This method allows you to access and work with the annotations that have been inserted into the image.
+
+Here is an example of deleting rectangle, ellipse, arrow, path, and line in a button click event.
+
+{% if page.publishingplatform == "typescript" %}
+
+ {% tabs %}
+{% highlight ts tabtitle="index.ts" %}
+{% include code-snippet/image-editor/annotation-cs5/index.ts %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+        
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+
+{% elsif page.publishingplatform == "javascript" %}
+
+{% tabs %}
+{% highlight js tabtitle="index.js" %}
+{% include code-snippet/image-editor/annotation-cs5/index.js %}
+{% endhighlight %}
+{% highlight html tabtitle="index.html" %}
+{% include code-snippet/image-editor/annotation-cs5/index.html %}
+{% endhighlight %}
+{% endtabs %}
+
+{% previewsample "page.domainurl/code-snippet/image-editor/annotation-cs5" %}
+{% endif %}
