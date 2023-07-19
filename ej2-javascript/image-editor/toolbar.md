@@ -37,7 +37,7 @@ Here is an example of adding custom toolbar items to rotate and flip transformat
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-cs1/index.ts %}
 {% endhighlight %}
@@ -67,6 +67,8 @@ Here is an example of adding custom toolbar items to rotate and flip transformat
 The [`toolbar`](../../api/image-editor/#toolbar) property controls the visibility of the toolbar in the Image Editor. When the [`toolbar`](../../api/image-editor/#toolbar) is set to an empty list, the toolbar is hidden. Conversely, if the [`toolbar`](../../api/image-editor/#toolbar) contains a list of items, the toolbar is shown, displaying the specified items. This feature provides flexibility for users to personalize their image editing experience. 
 
 Here is an example of hiding the toolbar of the image editor using [`toolbar`](../../api/image-editor/#toolbar). 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -98,6 +100,8 @@ Here is an example of hiding the toolbar of the image editor using [`toolbar`](.
 The [`toolbar`](../../api/image-editor/#toolbar) property is utilized to control the visibility of toolbar items in the Image Editor. By default, the [`toolbar`](../../api/image-editor/#toolbar) includes the default toolbar items. So, if you wish to hide the default toolbar items then you need to explicitly define the required items using [`toolbar`](../../api/image-editor/#toolbar) property. This allows you to customize the toolbar by displaying only the specific items you require, tailoring the editing experience to your preferences.
 
 Here is an example of hiding the cropping and selection toolbar items using [`toolbar`](../../api/image-editor/#toolbar) property. 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -144,6 +148,8 @@ The [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) event is 
 
 Here is an example of toolbar item clicking event using [`toolbarItemClicked`](../../api/image-editor/#toolbaritemclicked) property. 
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs5/index.ts %}
@@ -177,7 +183,7 @@ Here is an example of using [`toolbarTemplate`](../../api/image-editor/#toolbart
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs1/index.ts %}
 {% endhighlight %}
@@ -210,7 +216,7 @@ In the following example, the contextual toolbar for rectangle will be rendered 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs2/index.ts %}
 {% endhighlight %}
@@ -243,7 +249,7 @@ Here is an example of adding the custom toolbar item to the contextual toolbar.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/toolbar-template-cs6/index.ts %}
 {% endhighlight %}

@@ -18,6 +18,8 @@ The quick access toolbar that appears when inserting annotations in the Image Ed
 
 Here is an example of adding the custom toolbar item to the quick access toolbar. 
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/quick-access-cs1/index.ts %}

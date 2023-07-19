@@ -43,11 +43,11 @@ By utilizing the [`drawText`](../../api/image-editor/#drawtext) method with thes
 
 Here is an example of adding a text in a button click using [`drawText`](../../api/image-editor/#drawtext) method. 
 
-In the following example, you can using the drawText method in the button click event.
+In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs1/index.ts %}
 {% endhighlight %}
@@ -76,7 +76,9 @@ In the following example, you can using the drawText method in the button click 
 
 The [`drawText`](../../api/image-editor/#drawtext) method in the Image Editor control is commonly used to insert text annotations into an image. If the provided text parameter contains a newline character (\n), the text will be automatically split into multiple lines, with each line appearing on a separate line in the annotation.
 
-In the following example, you can using the drawText method in the button click event.
+In the following example, you can using the [`drawText`](../../api/image-editor/#drawtext) method in the button click event.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -113,6 +115,8 @@ To retrieve the inserted text annotations, you can utilize the [`getShapeSetting
 
 In the following example, the [`deleteShape`](../../api/image-editor/#deleteshape) method is used in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs9/index.ts %}
@@ -143,6 +147,8 @@ In the following example, the [`deleteShape`](../../api/image-editor/#deleteshap
 The [`shapeChanging`](../../api/image-editor/#shapechanging) event in the Image Editor control is triggered when a text annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the text's color and font family by adjusting the relevant properties. 
 
 By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event, you can enhance the customization options for text annotations and provide a more tailored and interactive experience within the Image Editor control. 
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -179,7 +185,7 @@ Here is an example of using the [`freeHandDraw`](../../api/image-editor/#freehan
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs2/index.ts %}
 {% endhighlight %}
@@ -209,6 +215,8 @@ Here is an example of using the [`freeHandDraw`](../../api/image-editor/#freehan
 The [`shapeChanging`](../../api/image-editor/#shapechanging) event in the Image Editor control is triggered when a freehand annotation is being modified or changed through the toolbar interaction. This event provides an opportunity to make alterations to the freehand annotation's color and stroke width by adjusting the relevant properties.
 
 By leveraging the [`shapeChanging`](../../api/image-editor/#shapechanging) event, you can enhance the customization options for freehand annotations and provide a more tailored and interactive experience within the Image Editor control.
+
+{% if page.publishingplatform == "typescript" %}
 
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
@@ -247,7 +255,7 @@ In the following example, the [`deleteShape`](../../api/image-editor/#deleteshap
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs11/index.ts %}
 {% endhighlight %}
@@ -364,7 +372,7 @@ Here is an example of inserting rectangle, ellipse, arrow, path, and line in a b
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs3/index.ts %}
 {% endhighlight %}
@@ -401,7 +409,7 @@ Here is an example of deleting rectangle, ellipse, arrow, path, and line in a bu
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs5/index.ts %}
 {% endhighlight %}

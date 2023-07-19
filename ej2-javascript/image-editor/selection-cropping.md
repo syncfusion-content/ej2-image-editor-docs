@@ -33,7 +33,7 @@ Here is an example of square selection using the [`select`](../../api/image-edit
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs3/index.ts %}
 {% endhighlight %}
@@ -73,7 +73,7 @@ In the following example, the [`select`](../../api/image-editor/#select) method 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs5/index.ts %}
 {% endhighlight %}
@@ -122,7 +122,7 @@ Here is an example of circle cropping using the [`select`](../../api/image-edito
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs6/index.ts %}
 {% endhighlight %}

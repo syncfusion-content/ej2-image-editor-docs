@@ -27,6 +27,8 @@ Here is an example of brightness, contrast, and sharpness fine-tuning using the 
 
 In the following example, you can using the finetuneImage method in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/finetune-cs1/index.ts %}
