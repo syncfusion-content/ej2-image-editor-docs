@@ -78,6 +78,8 @@ The [`drawText`](../../api/image-editor/#drawtext) method in the Image Editor co
 
 In the following example, you can using the drawText method in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/annotation-cs8/index.ts %}
