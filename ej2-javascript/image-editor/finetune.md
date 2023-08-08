@@ -66,6 +66,8 @@ Here is an example of hue, exposure, and blur fine-tuning using the [`finetuneIm
 
 In the following example, you can using the finetuneImage method in the button click event.
 
+{% if page.publishingplatform == "typescript" %}
+
 {% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/finetune-cs2/index.ts %}
