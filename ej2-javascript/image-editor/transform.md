@@ -23,7 +23,7 @@ In the following example, the [`rotate`](../../api/image-editor/#rotate) method 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/transform-cs1/index.ts %}
 {% endhighlight %}
@@ -60,7 +60,7 @@ In the following example, the [`flip`](../../api/image-editor/#flip) method is u
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/transform-cs2/index.ts %}
 {% endhighlight %}
@@ -99,7 +99,7 @@ In the following example, you can using the [`zoom`](../../api/image-editor/#zoo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/transform-cs3/index.ts %}
 {% endhighlight %}
@@ -130,7 +130,7 @@ In the following example, you can using the [`zoom`](../../api/image-editor/#zoo
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/transform-cs4/index.ts %}
 {% endhighlight %}
@@ -183,7 +183,7 @@ In the following example, you can use the [`pan`](../../api/image-editor/#pan) m
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/transform-cs5/index.ts %}
 {% endhighlight %}

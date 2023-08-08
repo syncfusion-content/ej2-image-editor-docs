@@ -21,7 +21,7 @@ The [`open`](../../api/image-editor/#open) method in the Image Editor control of
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/getting-started-cs2/index.ts %}
 {% endhighlight %}
@@ -60,7 +60,7 @@ In the following example, the [`export`](../../api/image-editor/#export) method 
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/custom-selection-cs1/index.ts %}
 {% endhighlight %}
@@ -115,7 +115,7 @@ In the following example, the [`created`](../../api/image-editor/#created) event
 
 {% if page.publishingplatform == "typescript" %}
 
- {% tabs %}
+{% tabs %}
 {% highlight ts tabtitle="index.ts" %}
 {% include code-snippet/image-editor/getting-started-cs2/index.ts %}
 {% endhighlight %}
