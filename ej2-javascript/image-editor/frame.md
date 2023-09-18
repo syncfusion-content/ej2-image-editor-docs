@@ -11,15 +11,35 @@ domainurl: ##DomainURL##
 
 # Frame in the ##Platform_Name## Image Editor control
 
-Frame are pre-defined effects that can be applied to an image to alter its appearance or mood. Image filters can be used to add visual interest or to enhance certain features of the image. Some common types of image frame include Mat, Bevel, Line, Inset, Hook. This can be done by either using the toolbar or the [`applyImageFilter`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#applyimagefilter) method which takes a single parameter: the filter applied to an image.
+The frame feature in an Image Editor provides users with the capability to add decorative borders or frames around their images. Frames are a visual design element that can enhance the overall appearance and appeal of an image.
 
-## Apply frame
+## Apply frame to the Image
 
-The [`drawFrame`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#applyimagefilter) method is utilized to apply frame to an image. By passing the desired filter type as the first parameter of the method, specified as [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/imageFilterOption/) the method applies the corresponding filter to the image. This allows for easy and convenient application of various filters to enhance or modify the image based on the chosen filter type.
+The [`drawFrame`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawframe) method is a function designed to enable the application of various frame options to an image. This method simplifies the process of adding decorative frames, such as mat, bevel, line, hook, and inset, to an image by allowing users to specify their desired frame type.
 
-* frameType - Specifies the frame options to the image.
+Depending on the frame type selected, users may have additional customization options, such as adjusting the frame's thickness, color, texture, or other attributes. This allows for fine-tuning the appearance of the frame to match the image's theme or the user's preferences
 
-In the following example, you can using the applyImageFilter method in the button click event.
+The [`drawFrame`](https://ej2.syncfusion.com/documentation/api/image-editor/#drawframe) method in the Image Editor control takes six parameters to define the properties of the rectangle annotation:
+
+* frameType - Specified the image data or url of the image to be inserted.
+
+* Color - Specifies the color for the frame.
+
+* gradientColor - Specifies the gradient color for the frame.
+
+* size - Specifies the size of the frame.
+
+* inset - Specifies the inset value for line, hook, and inset type frames.
+
+* offset - Specifies the offset value for line and inset type frames.
+
+* borderRadius - Specifies the border radius for line type frame.
+
+* frameLineStyle - Specifies the frame line style for line type frame.
+
+* lineCount - Specifies the line count for the line type frame.
+
+In the following example, you can use the drawFrame method in the button click event.
 
 {% if page.publishingplatform == "typescript" %}
 
@@ -48,18 +68,18 @@ In the following example, you can using the applyImageFilter method in the butto
 {% previewsample "page.domainurl/code-snippet/image-editor/frame-cs1" %}
 {% endif %}
 
-## Frame Changing event
+## Frame changing event
 
-The [`frameChanging`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#frameChanging) event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
+The [`frameChanging`](https://ej2.syncfusion.com/documentation/api/image-editor/#framechange) event is triggered when applying frame on the image. This event provides information encapsulated within an object, which includes details about the frame applied in an image. This information encompasses:
 
 Frame Type: This indicates the specific type of frame being applied, whether it's a mat, bevel, line, or hook.
 
 Customization Values: These values contain information about any adjustments or modifications made to the frame. For instance, if the frame can be customized with attributes like color, size, or style, these details are conveyed within the event object.
 
-The parameter available in the [`FrameChangeEventArgs`] is
+The parameter available in the [`FrameChangeEventArgs`](https://ej2.syncfusion.com/documentation/api/image-editor/framechangeeventargs/) is
 
-FrameChangeEventArgs.previousFrameSetting: The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
+* [`FrameChangeEventArgs.previousFrameSetting`](https://ej2.syncfusion.com/documentation/api/image-editor/frameChangeEventArgs/#previousframesetting) - The frame settings including size, color, inset, offset, gradient color which is applied before changing the frame.
 
-FrameChangeEventArgs.currentFrameSetting: The frame settings including size, color, inset, offset, gradient color which is going to apply after changing the frame.
+* [`FrameChangeEventArgs.currentFrameSetting`](https://ej2.syncfusion.com/documentation/api/image-editor/frameChangeEventArgs/#currentframesetting) - The frame settings including size, color, inset, offset, gradient color which is going to apply after changing the frame.
 
-FrameChangeEventArgs.cancel: Specifies a boolean value to cancel the frame changing action.
+* [`FrameChangeEventArgs.cancel`](https://ej2.syncfusion.com/documentation/api/image-editor/frameChangeEventArgs/#cancel) - Specifies a boolean value to cancel the frame changing action.

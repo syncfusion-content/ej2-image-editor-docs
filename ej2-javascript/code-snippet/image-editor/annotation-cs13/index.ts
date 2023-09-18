@@ -24,7 +24,7 @@ import { Browser } from '@syncfusion/ej2-base';
     let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
     document.getElementById('btnClick').onclick = (): void => {
         let dimension: any = imageEditorObj.getImageDimension();
-        imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 50, 80, true, 90);
+        imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 90);
     }
 
 

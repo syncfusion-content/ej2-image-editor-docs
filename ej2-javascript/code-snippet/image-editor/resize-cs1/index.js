@@ -15,11 +15,9 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   imageEditorObj.appendTo('#imageeditor');
 
 document.getElementById('aspectClick').onclick = function() {
-  let dimension = imageEditorObj.getImageDimension();
-	imageEditorObj.resize(450, 342, true);
+	imageEditorObj.resize(300, 342, true);
 }
 document.getElementById('nonaspectClick').onclick = function() {
-  let dimension = imageEditorObj.getImageDimension();
-	imageEditorObj.resize(450, 342, false);
+	imageEditorObj.resize(400, 100, false);
 }
 

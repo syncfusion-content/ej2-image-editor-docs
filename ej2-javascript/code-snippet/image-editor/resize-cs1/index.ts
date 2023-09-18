@@ -22,10 +22,10 @@ import { Browser } from '@syncfusion/ej2-base';
 
      //Button click
     document.getElementById('aspectClick').onclick = (): void => {
-        imageEditorObj.resize(450, 342, true);
+        imageEditorObj.resize(300, 342, true);
     }
     document.getElementById('nonaspectClick').onclick = (): void => {
-        imageEditorObj.resize(450, 342, false);
+        imageEditorObj.resize(400, 100, false);
     }
 
 

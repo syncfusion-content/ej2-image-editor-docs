@@ -16,6 +16,6 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 
 document.getElementById('btnClick').onclick = function() {
   let dimension = imageEditorObj.getImageDimension();
-	imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 50, 80, true, 90);
+	imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 90);
 }
 
