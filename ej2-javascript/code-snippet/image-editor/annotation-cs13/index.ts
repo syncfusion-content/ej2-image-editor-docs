@@ -9,7 +9,7 @@ import { Browser } from '@syncfusion/ej2-base';
  let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: [],
+    toolbar: ['Annotate', 'Image'],
     created: () => {
         if (Browser.isDevice) {
             imageEditorObj.open('bee-eater.png');
@@ -20,11 +20,5 @@ import { Browser } from '@syncfusion/ej2-base';
     });
     imageEditorObj.appendTo('#imageeditor');
 
-     //Button click
-    let button: Button = new Button({cssClass: `e-primary`, content:'Click'}, '#btnClick');
-    document.getElementById('btnClick').onclick = (): void => {
-        let dimension: any = imageEditorObj.getImageDimension();
-        imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 90);
-    }
 
 

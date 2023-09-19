@@ -3,7 +3,7 @@ ej.base.enableRipple(true);
 var imageEditorObj = new ej.imageeditor.ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: [],
+    toolbar: ['Resize', 'Save', 'Reset'],
 	created: function () {
 		if (ej.base.Browser.isDevice) {
 			imageEditorObj.open('bee-eater.png');
@@ -14,10 +14,4 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
   });
   imageEditorObj.appendTo('#imageeditor');
 
-document.getElementById('aspectClick').onclick = function() {
-	imageEditorObj.resize(300, 342, true);
-}
-document.getElementById('nonaspectClick').onclick = function() {
-	imageEditorObj.resize(400, 100, false);
-}
 

@@ -3,7 +3,7 @@ ej.base.enableRipple(true);
 var imageEditorObj = new ej.imageeditor.ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: [],
+    toolbar: ['Annotate', 'Image'],
 	created: function () {
 		if (ej.base.Browser.isDevice) {
 			imageEditorObj.open('bee-eater.png');
@@ -13,9 +13,4 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
 	}
   });
   imageEditorObj.appendTo('#imageeditor');
-
-document.getElementById('btnClick').onclick = function() {
-  let dimension = imageEditorObj.getImageDimension();
-	imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 90);
-}
 
