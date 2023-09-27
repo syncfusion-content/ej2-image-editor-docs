@@ -11,11 +11,7 @@ import { Browser } from '@syncfusion/ej2-base';
     height: '330px',
     toolbar: ['Annotate', 'Image'],
     created: () => {
-        if (Browser.isDevice) {
-            imageEditorObj.open('bee-eater.png');
-        } else {
-            imageEditorObj.open('bee-eater.png');
-            }
+        imageEditorObj.open('bee-eater.png');
         }
     });
     imageEditorObj.appendTo('#imageeditor');

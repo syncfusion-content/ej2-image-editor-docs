@@ -5,11 +5,7 @@ var imageEditorObj = new ej.imageeditor.ImageEditor({
     height: '330px',
     toolbar: ['Resize', 'Save', 'Reset'],
 	created: function () {
-		if (ej.base.Browser.isDevice) {
-			imageEditorObj.open('bee-eater.png');
-        } else {
-            imageEditorObj.open('bee-eater.png');
-        }
+        imageEditorObj.open('bee-eater.png');
 	}
   });
   imageEditorObj.appendTo('#imageeditor');
