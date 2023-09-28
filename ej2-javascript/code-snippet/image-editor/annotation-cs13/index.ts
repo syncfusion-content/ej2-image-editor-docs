@@ -9,12 +9,19 @@ import { Browser } from '@syncfusion/ej2-base';
  let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '330px',
-    toolbar: ['Annotate', 'Image'],
+    toolbar: [],
     created: () => {
         imageEditorObj.open('bee-eater.png');
         }
     });
     imageEditorObj.appendTo('#imageeditor');
+
+    document.getElementById('btnClick').onclick = (): void => {
+        let dimension: any = imageEditorObj.getImageDimension();
+        imageEditorObj.drawImage('flower.png', dimension.x, dimension.y, 100, 80, true, 0);
+    }    
+
+    
 
 
 
