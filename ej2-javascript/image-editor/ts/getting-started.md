@@ -106,7 +106,7 @@ Add the HTML DIV tag with the `id` attribute as `imageeditor` to your `index.htm
 </head>
 
 <body>
-      <div id="imageeditor">
+    <div id="imageeditor">
     </div>
 </body>
 </html>
