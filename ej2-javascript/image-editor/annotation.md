@@ -177,7 +177,7 @@ By leveraging the [`shapeChanging`](https://ej2.syncfusion.com/javascript/docume
 
 ### Add Additional font family
 
-The [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. 
+The [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property in the Image Editor control provides the flexibility to incorporate supplementary font families, expanding your options for text styling and ensuring a broader range of fonts can be utilized within your design or content. The font value will be determined by the 'id' property.
 
 By leveraging the [`fontFamily`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#fontFamily) property, you can elevate the scope of customization for text annotations, enriching the user experience within the Image Editor control. This enhancement offers a more personalized and dynamic interaction, empowering users to tailor their text styles for a truly engaging editing experience.
 

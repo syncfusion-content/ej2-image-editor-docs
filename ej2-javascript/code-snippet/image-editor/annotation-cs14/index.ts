@@ -10,8 +10,8 @@ import { Browser } from '@syncfusion/ej2-base';
     width: '550px',
     height: '330px',
     toolbar: [],
-    fontFamily: { default: 'Arial', items: [{id: 'arial', text: 'Arial'}, {id: 'brushScriptMT', text: 'Brush Script MT'},
-      {id: 'papyrus', text: 'Papyrus'}, {id: 'timesNewRoman', text: 'Times New Roman'}, {id: 'courierNew', text: 'Courier New'}] },
+    fontFamily: { default: 'Arial', items: [{id: 'arial', text: 'Arial'}, {id: 'brush script mt', text: 'Brush Script MT'},
+      {id: 'papyrus', text: 'Papyrus'}, {id: 'times new roman', text: 'Times New Roman'}, {id: 'courier new', text: 'Courier New'}] },
     created: () => {
         imageEditorObj.open('bee-eater.png');
     },
