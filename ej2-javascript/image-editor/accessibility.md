@@ -3,7 +3,7 @@ layout: post
 title: Accessibility in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Accessibility in Syncfusion ##Platform_Name## Image Editor component of Syncfusion Essential JS 2 and more.
 platform: ej2-javaScript
-control: Filter 
+control: Accessibility
 publishingplatform: ##Platform_Name##
 documentation: ug
 domainurl: ##DomainURL##
