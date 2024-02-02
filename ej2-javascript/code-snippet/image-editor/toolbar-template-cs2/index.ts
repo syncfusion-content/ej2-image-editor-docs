@@ -9,9 +9,16 @@ import { Browser } from '@syncfusion/ej2-base';
 let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '350px',
-    toolbarUpdating: (args: ToolbarEventArgs) => {
-        if (args.toolbarType === 'shapes') {
-            args.toolbarItems = ['strokeColor'];
+    toolbarUpdating: (args: any) => {
+        if (args.toolbarType === 'pen') {
+            for (let i: number = 0; i < args.toolbarItems.length; i++) {
+                if (args.toolbarItems[i as number].align === "Center") {
+                    if ((args.toolbarItems[i as number].tooltipText === "Stroke Width" || args.toolbarItems[i as number].tooltipText === "Remove") ||
+                        (args.toolbarItems[i as number].type && args.toolbarItems[i as number].type === 'Separator')) {
+                        args.toolbarItems[i as number].visible = false;
+                    }
+                }
+            }
         }
     },
     created: () => {
