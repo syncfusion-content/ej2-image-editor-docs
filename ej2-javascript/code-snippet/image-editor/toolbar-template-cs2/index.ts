@@ -11,15 +11,12 @@ let imageEditorObj: ImageEditor = new ImageEditor({
     height: '350px',
     toolbarUpdating: (args: any) => {
         if (args.toolbarType === 'pen') {
-            for (let i: number = 0; i < args.toolbarItems.length; i++) {
-                if (args.toolbarItems[i as number].align === "Center") {
-                    if ((args.toolbarItems[i as number].tooltipText === "Stroke Width" || args.toolbarItems[i as number].tooltipText === "Remove") ||
-                        (args.toolbarItems[i as number].type && args.toolbarItems[i as number].type === 'Separator')) {
-                        args.toolbarItems[i as number].visible = false;
-                    }
+            args.toolbarItems.forEach(item => {
+                if (item.align === 'Center' && (item.tooltipText === 'Stroke Width' || item.tooltipText === 'Remove' || item.type === 'Separator')) {
+                    item.visible = false;
                 }
-            }
-        }
+            });
+        }            
     },
     created: () => {
         if (Browser.isDevice) {
