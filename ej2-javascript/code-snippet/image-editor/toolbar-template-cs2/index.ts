@@ -1,17 +1,17 @@
 
 
-import { ImageEditor } from '@syncfusion/ej2-image-editor';
+import { ImageEditor, ToolbarEventArgs } from '@syncfusion/ej2-image-editor';
 import { Browser } from '@syncfusion/ej2-base';
-
+import { ItemModel } from '@syncfusion/ej2-navigations';
 
 //Image Editor items definition
 
 let imageEditorObj: ImageEditor = new ImageEditor({
     width: '550px',
     height: '350px',
-    toolbarUpdating: (args: any) => {
+    toolbarUpdating: (args: ToolbarEventArgs) => {
         if (args.toolbarType === 'pen') {
-            args.toolbarItems.forEach(item => {
+            args.toolbarItems.forEach((item: ItemModel) => {
                 if (item.align === 'Center' && (item.tooltipText === 'Stroke Width' || item.tooltipText === 'Remove' || item.type === 'Separator')) {
                     item.visible = false;
                 }
