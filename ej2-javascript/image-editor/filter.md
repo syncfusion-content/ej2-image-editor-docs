@@ -48,7 +48,7 @@ In the following example, you can using the applyImageFilter method in the butto
 {% previewsample "page.domainurl/code-snippet/image-editor/filter-cs1" %}
 {% endif %}
 
-## Apply filter effect
+## Image Filtering Event
 
 The [`imageFiltering`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#imageFiltering) event is triggered when applying filtering on the image. This event is passed an object that contains information about the filtering event, such as the type of filtering. 
 
