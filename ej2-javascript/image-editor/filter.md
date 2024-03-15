@@ -2,7 +2,7 @@
 layout: post
 title: Filter in ##Platform_Name## Image editor control | Syncfusion
 description: Learn here all about Open save in Syncfusion ##Platform_Name## Image editor control of Syncfusion Essential JS 2 and more.
-platform: ej2-javaScript
+platform: ej2-javascript
 control: Filter 
 publishingplatform: ##Platform_Name##
 documentation: ug
