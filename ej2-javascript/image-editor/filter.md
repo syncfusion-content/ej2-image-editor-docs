@@ -59,6 +59,4 @@ ImageFilterEventArgs.filter - The type of filtering as [`ImageFilterOption`](htt
 ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
 
 
-## Note
-
-The Filter and Finetune features of the Image Editor component were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform. Due to this issue, filter and finetune support are not working on iOS devices.
+> Please note that the Filter and Finetune features were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform.
