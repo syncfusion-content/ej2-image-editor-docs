@@ -57,3 +57,8 @@ The parameter available in the [`ImageFilterEventArgs`](https://ej2.syncfusion.c
 ImageFilterEventArgs.filter - The type of filtering as [`ImageFilterOption`](https://ej2.syncfusion.com/javascript/documentation/api/image-editor/#ImageFilterOption) to be applied in the image editor. 
 
 ImageFilterEventArgs.cancel – Specifies to cancel the filtering action. 
+
+
+## Note
+
+The Filter and Finetune features of the Image Editor component were unavailable on iOS due to the non-functioning CanvasContext.filter property on this platform. Due to this issue, filter and finetune support are not working on iOS devices.
